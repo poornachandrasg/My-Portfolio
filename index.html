@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Poornachandra Goudar — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Particle Canvas Background -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="nav-logo-text">PG<span class="dot">.</span></span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link" data-text="About">About</a></li>
+      <li><a href="#skills" class="nav-link" data-text="Skills">Skills</a></li>
+      <li><a href="#experience" class="nav-link" data-text="Experience">Experience</a></li>
+      <li><a href="#projects" class="nav-link" data-text="Projects">Projects</a></li>
+      <li><a href="#contact" class="nav-link" data-text="Contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag" id="hero-tag">// Aeronautical → DevOps → Data Analytics</p>
+      <h1 class="hero-name" id="hero-name">
+        <span class="glitch" data-text="Poornachandra">Poornachandra</span>
+        <span class="glitch surname" data-text="Goudar">Goudar</span>
+      </h1>
+      <p class="hero-subtitle" id="hero-subtitle">
+        DevOps Engineer &nbsp;·&nbsp; Founder &nbsp;·&nbsp; Drone Pioneer
+      </p>
+      <div class="hero-cta">
+        <a href="#about" class="btn btn-primary">Explore My Work</a>
+        <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">01 — About</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lead">With five years of experience leading a team in the design, operation, and deployment of an <span class="highlight">Agricultural Spectroscopy Drone</span>, I am transitioning towards development and data analytics.</p>
+          <p>My goal is to leverage deep technical expertise and problem-solving skills in new and challenging domains — applying innovative technologies to drive business growth and improve operational efficiency.</p>
+          <p>From founding an agri-tech startup backed by national incubators, to working with Uber AI and Amazon Business, I bring a rare cross-domain perspective to every problem I tackle.</p>
+          <div class="about-meta">
+            <div class="meta-item">
+              <span class="meta-label">Location</span>
+              <span class="meta-value">New Delhi, India</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Email</span>
+              <span class="meta-value">poorna.goudar111@gmail.com</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Phone</span>
+              <span class="meta-value">+91 78297 06980</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Languages</span>
+              <span class="meta-value">English · Spanish · French</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <div class="avatar-ring">
+            <div class="avatar-inner">
+              <span class="avatar-initials">PG</span>
+              <div class="avatar-orbit orbit-1"></div>
+              <div class="avatar-orbit orbit-2"></div>
+              <div class="avatar-orbit orbit-3">
+                <div class="orbit-dot"></div>
+              </div>
+            </div>
+          </div>
+          <div class="stat-cards">
+            <div class="stat-card">
+              <span class="stat-number">5+</span>
+              <span class="stat-desc">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-desc">Companies</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">1</span>
+              <span class="stat-desc">Startup Founded</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">02 — Skills</span>
+        <h2 class="section-title">My Toolkit</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="cat-icon">☁</span> Cloud & DevOps</h3>
+          <div class="skill-pills">
+            <span class="pill pill-primary">AWS CLI</span>
+            <span class="pill pill-primary">Amazon S3</span>
+            <span class="pill pill-primary">DevOps</span>
+            <span class="pill pill-primary">AWS Nitro System</span>
+            <span class="pill pill-primary">AWS Cloud Practitioner</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="cat-icon">📊</span> Data & Analytics</h3>
+          <div class="skill-pills">
+            <span class="pill pill-secondary">Microsoft Power BI</span>
+            <span class="pill pill-secondary">Data Visualization</span>
+            <span class="pill pill-secondary">Computational Analysis</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="cat-icon">⚙</span> Engineering</h3>
+          <div class="skill-pills">
+            <span class="pill pill-tertiary">Siemens NX</span>
+            <span class="pill pill-tertiary">Hydraulics & Pneumatics</span>
+            <span class="pill pill-tertiary">Aeronautical Engineering</span>
+            <span class="pill pill-tertiary">Drone Systems</span>
+            <span class="pill pill-tertiary">Spectroscopy</span>
+          </div>
+        </div>
+        <div class="skill-category reveal">
+          <h3 class="skill-cat-title"><span class="cat-icon">🚀</span> Leadership</h3>
+          <div class="skill-pills">
+            <span class="pill pill-accent">Team Lead</span>
+            <span class="pill pill-accent">Startup Founding</span>
+            <span class="pill pill-accent">R&D Management</span>
+            <span class="pill pill-accent">Operations</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="certs-section reveal">
+        <h3 class="certs-title">Certifications</h3>
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-icon">◈</div>
+            <span>AWS Nitro System</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">◈</div>
+            <span>Power BI — Analyzing & Visualizing Data</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">◈</div>
+            <span>Certified Hydraulics & Pneumatics</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">◈</div>
+            <span>Siemens NX</span>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon">◈</div>
+            <span>AWS Cloud Practitioner Essentials</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ─── -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">03 — Experience</span>
+        <h2 class="section-title">My Journey</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal" data-index="0">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">DevOps Engineer</h3>
+                <span class="timeline-company">Amazon Business</span>
+              </div>
+              <span class="timeline-date">Jun 2025 – Dec 2025</span>
+            </div>
+            <p class="timeline-location">📍 New Delhi, Delhi, India</p>
+            <p class="timeline-desc">Worked at Amazon Business driving DevOps practices, infrastructure automation, and cloud operations leveraging the AWS ecosystem.</p>
+            <div class="timeline-tags">
+              <span>AWS</span><span>DevOps</span><span>Cloud</span><span>Automation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-index="1">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Founder</h3>
+                <span class="timeline-company">Equinox MITE</span>
+              </div>
+              <span class="timeline-date">Jan 2018 – Dec 2022</span>
+            </div>
+            <p class="timeline-location">📍 Mangaluru, Karnataka, India</p>
+            <p class="timeline-desc">Founded and led an agri-tech startup funded by New Age Incubation Network and K-Tec Innovation Hub, Karnataka. Focused on agricultural research, crop health management, and the development of a spectroscopy-based drone system.</p>
+            <div class="timeline-tags">
+              <span>Startup</span><span>Drones</span><span>AgriTech</span><span>R&D</span><span>Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-index="2">
+          <div class="timeline-dot"></div>
+          <div class="timeline-line"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Service Team Lead</h3>
+                <span class="timeline-company">Uber AI</span>
+              </div>
+              <span class="timeline-date">Dec 2020 – Jun 2021</span>
+            </div>
+            <p class="timeline-location">📍 Hyderabad, Telangana, India</p>
+            <p class="timeline-desc">Led a service team at Uber AI, overseeing operations and team management in a fast-paced AI-driven environment.</p>
+            <div class="timeline-tags">
+              <span>AI</span><span>Team Lead</span><span>Operations</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal" data-index="3">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-role">Internship Trainee</h3>
+                <span class="timeline-company">Indian Railways</span>
+              </div>
+              <span class="timeline-date">Jul 2019 – Aug 2019</span>
+            </div>
+            <p class="timeline-location">📍 Hubli, India</p>
+            <p class="timeline-desc">Gained hands-on engineering experience working within Indian Railways' technical operations.</p>
+            <div class="timeline-tags">
+              <span>Engineering</span><span>Operations</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Education -->
+      <div class="education-block reveal">
+        <h3 class="edu-label">Education</h3>
+        <div class="edu-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-content">
+            <h4>Bachelor of Engineering — Aeronautical Engineering</h4>
+            <span class="edu-school">Mangalore Institute of Technology and Engineering (MITE)</span>
+            <span class="edu-year">2016 – 2020</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">04 — Projects</span>
+        <h2 class="section-title">Notable Work</h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card reveal" data-project="drone">
+          <div class="project-glow"></div>
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <h3 class="project-title">Agricultural Spectroscopy Drone</h3>
+            <p class="project-desc">Led a 5-year R&D effort designing, operating, and deploying a spectroscopy-based drone for crop health management and precision agriculture. Funded by New Age Incubation Network.</p>
+            <div class="project-tags">
+              <span>Drone Engineering</span>
+              <span>Spectroscopy</span>
+              <span>AgriTech</span>
+              <span>Team Leadership</span>
+            </div>
+            <div class="project-meta">
+              <span class="project-year">2018 – 2022</span>
+              <span class="project-type">Hardware · Research</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-project="startup">
+          <div class="project-glow"></div>
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <h3 class="project-title">Equinox MITE — Startup</h3>
+            <p class="project-desc">Built and scaled an agri-tech startup from ideation to funded product. Secured backing from K-Tec Innovation Hub and national incubation networks, focusing on crop health monitoring solutions.</p>
+            <div class="project-tags">
+              <span>Entrepreneurship</span>
+              <span>Fundraising</span>
+              <span>Product Development</span>
+            </div>
+            <div class="project-meta">
+              <span class="project-year">2018 – 2022</span>
+              <span class="project-type">Startup · Business</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-project="composite">
+          <div class="project-glow"></div>
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <h3 class="project-title">Hybrid Composite Material Analysis</h3>
+            <p class="project-desc">Authored and published a research paper on computational analysis of hybrid composite materials — exploring structural behavior, stress distribution, and material performance characteristics.</p>
+            <div class="project-tags">
+              <span>Research</span>
+              <span>Computational Analysis</span>
+              <span>Materials Science</span>
+              <span>Publication</span>
+            </div>
+            <div class="project-meta">
+              <span class="project-year">2020</span>
+              <span class="project-type">Research · Academia</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal" data-project="cloud">
+          <div class="project-glow"></div>
+          <div class="project-number">04</div>
+          <div class="project-content">
+            <h3 class="project-title">AWS Cloud Infrastructure — DevOps</h3>
+            <p class="project-desc">At Amazon Business, architected and managed cloud infrastructure using AWS services including S3, Nitro System, and CLI tooling. Drove automation pipelines and operational excellence.</p>
+            <div class="project-tags">
+              <span>AWS</span>
+              <span>DevOps</span>
+              <span>Automation</span>
+              <span>Cloud Architecture</span>
+            </div>
+            <div class="project-meta">
+              <span class="project-year">2025</span>
+              <span class="project-type">Cloud · Infrastructure</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">05 — Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <p class="contact-intro">Whether you're building something ambitious, exploring new ideas, or just want to connect — I'd love to hear from you.</p>
+          <div class="contact-links">
+            <a href="mailto:poorna.goudar111@gmail.com" class="contact-item">
+              <span class="contact-icon">✉</span>
+              <span>poorna.goudar111@gmail.com</span>
+            </a>
+            <a href="tel:+917829706980" class="contact-item">
+              <span class="contact-icon">☎</span>
+              <span>+91 78297 06980</span>
+            </a>
+            <a href="https://www.linkedin.com/in/poornachandra-goudar-a9830b161" target="_blank" class="contact-item">
+              <span class="contact-icon">in</span>
+              <span>LinkedIn Profile</span>
+            </a>
+            <div class="contact-item no-link">
+              <span class="contact-icon">📍</span>
+              <span>Vijayapura, Karnataka — New Delhi, India</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" autocomplete="off" />
+            <span class="form-error" id="name-error">Please enter your name.</span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" autocomplete="off" />
+            <span class="form-error" id="email-error">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" autocomplete="off" />
+            <span class="form-error" id="subject-error">Please add a subject.</span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me more..."></textarea>
+            <span class="form-error" id="message-error">Message must be at least 10 characters.</span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-arrow">→</span>
+          </button>
+          <div class="form-success" id="form-success">
+            ✓ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-logo">PG<span class="dot">.</span></span>
+        <p class="footer-copy">© 2025 Poornachandra Goudar. Built with passion.</p>
+        <div class="footer-links">
+          <a href="https://www.linkedin.com/in/poornachandra-goudar-a9830b161" target="_blank">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
